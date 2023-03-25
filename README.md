@@ -3,7 +3,7 @@
 # Lowcode.AI documents training with vector
 一个简单的结合低代码和向量数据库的AI知识库搜索实现.
 
-🐶 A simple AI knowledge base search implementation combining low code and PostgreSQL vector database
+A simple AI knowledge base search implementation combining low code and PostgreSQL vector database 🐶 
 <p>
 <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/enimo/lowcode.ai" />
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/enimo/lowcode.ai" />
@@ -14,12 +14,9 @@
 </p>
 
 <a href="https://github.com/enimo/lowcode.ai">
-    <img width="100%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
+    <img width="40%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
 </a>
 
-<a href="https://github.com/enimo/lowcode.ai">
-    <img width="100%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/vector_flow.png?raw=true">
-</a>
 
 
 ## Getting Started /准备工作
@@ -46,6 +43,10 @@ cp .env.example .env
 ### 🎨 Usage / 实验和测试
 #### 添加训练数据
 目前默认在`./train_data`目录下放了一下markdown的测试数据，可以自行添加，向量初始化时，会自动遍历目录下所有的`.md`文件
+
+<a href="https://github.com/enimo/lowcode.ai">
+    <img width="70%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/vector_flow.png?raw=true">
+</a>
 
 #### Usage/测试和使用
 - 向量初始化：
