@@ -1,6 +1,6 @@
 <!-- Title -->
 
-# Lowcode.AI documents training with vector
+# Lowcode.AI documents training
 一个简单的结合低代码和向量数据库的AI知识库搜索实现.
 
 A simple AI knowledge base search implementation combining low code and PostgreSQL vector database 🐶 
@@ -14,7 +14,7 @@ A simple AI knowledge base search implementation combining low code and PostgreS
 </p>
 
 <a href="https://github.com/enimo/lowcode.ai">
-    <img width="40%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
+    <img width="60%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
 </a>
 
 
