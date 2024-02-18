@@ -1,6 +1,6 @@
 'use strict';
 
-const vector = require('./index');
+const lowcode = require('./index');
 const init = require('./init');
 const log = function() { console.log(...arguments) };
 
@@ -18,11 +18,20 @@ async function run() {
 			}));
 			break;
 
-		case 'search':
+		case 'rag':
 			// step 2:  测试基于向量搜索
-			log("vector.main return: ", await vector.main({
+			log("lowcode.main return: ", await lowcode.main({
 				"openid": "wedaQdTHDHjkhdaHFDH32dhalj",
+				"isRAG": true,
 				"text": "解释下微搭的生命周期"
+			}));
+			break;
+
+		case 'chat':
+			// step 2:  测试基于向量搜索
+			log("lowcode.main return: ", await lowcode.main({
+				"openid": "wedaQdTHDHjkhdaHFDH32dhalj",
+				"text": "最近工作压力有点大"
 			}));
 			break;
 
