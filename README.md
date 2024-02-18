@@ -14,7 +14,7 @@ A simple AI knowledge base search implementation combining low code and PostgreS
 </p>
 
 <a href="https://github.com/enimo/lowcode.ai">
-    <img height="80%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
+    <img height="60%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
 </a>
 
 
@@ -45,7 +45,7 @@ cp .env.example .env
 目前默认在`./train_data`目录下放了一下markdown的测试数据，可以自行添加，向量初始化时，会自动遍历目录下所有的`.md`文件
 
 <a href="https://github.com/enimo/lowcode.ai">
-    <img height="80%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/vector_flow.png?raw=true">
+    <img height="60%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/vector_flow.png?raw=true">
 </a>
 
 #### Usage/测试和使用
