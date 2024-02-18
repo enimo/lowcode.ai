@@ -14,7 +14,7 @@ A simple AI knowledge base search implementation combining low code and PostgreS
 </p>
 
 <a href="https://github.com/enimo/lowcode.ai">
-    <img width="60%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
+    <img height="80%" src="https://github.com/enimo/lowcode.ai/blob/main/assets/weda_showcase.png?raw=true">
 </a>
 
 
@@ -37,7 +37,7 @@ npm install
 cp .env.example .env
 ```
 - 打开 `.env.example` 文件并添加`POSTGRES_URL`，对应你的Postgres数据库URL、数据库用户和密钥等
-- 在 `.env.example`中添加你的OPENAI_API_KEY以及OPENAI_URL（某些地区访问需要Proxy OPENAI的访问地址）
+- 在 `.env.example`中添加你的OPENAI_API_KEY以及OPENAI_URL
 
 
 ### 🎨 Usage / 实验和测试
@@ -56,7 +56,7 @@ npm test init
 
 - 向量搜索：
 ```bash
-npm test search
+npm test rag
 ```
 
 
