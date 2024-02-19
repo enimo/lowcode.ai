@@ -38,7 +38,7 @@ export default async function({event, data}) {
         let result = res.result['choices'][0]['message']['content'];
         $page.dataset.state.result = result.replace(/[\r\n]/g, "<br>");
         $page.dataset.state.showResult = true;
-        $page.dataset.state.loading = false;
+        $page.dataset.state.showLoading = false;
 
         if(res.result['errCode'] == 22000) { 
 
