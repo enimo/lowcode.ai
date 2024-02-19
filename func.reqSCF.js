@@ -43,7 +43,7 @@ export default async function({event, data}) {
         if(res.result['errCode'] == 22000) { 
 
           const ret = await app.cloud.callModel({
-            name: 'chatgpt_qa_way5e0s', // 数据模型标识，可以前往「数据源 - 数据模型」列表页查看
+            name: 'database_id', // 数据模型标识，可以前往「数据源 - 数据模型」列表页查看
             methodName: 'wedaCreate', // 数据模型方法标识，支持的方法可以前往「数据源 - 数据模型」的任一数据模型详情页查看当前模型支持的方法
             params: {req: text, res: result, openid, appname: 'weda_agent_demo'}, // 数据模型方法的入参
         
