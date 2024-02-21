@@ -18,7 +18,8 @@ var _ = module.exports;
 _.main = async function (params, context) {
 
     console.time("ALL_Timer");
-
+    log({params})
+    
     const text = params.text || '';
     const openid = params.openid || ''; 
     const lang = params.lang || 'Chinese'; 
@@ -40,7 +41,7 @@ _.main = async function (params, context) {
         const sql = postgres(POSTGRES_URL);
 
         // 开始向量搜索: k=1, 表示返回最相似的1条，可根据此参数按需控制上下文长度）
-        const documents = await _.searchKnn(text, 1, sql); // default k = 1
+        const documents = await _.searchKnn(text, 3, sql); // default k = 1
         log("documents length: ", documents.length, "\nret json: ", JSON.stringify(documents));
         // 生成 RAG 后的 messages
         messages = await _.genMessages(text, documents);
@@ -133,7 +134,7 @@ _.genMessages = async function(text, documents) {
 _.searchKnn = async function(question, k, sql){
 
     const embedding = await _.embedding(question);
-    log({embedding});
+    // log({embedding});
 
     const embeddingArr = "[" + embedding + "]";
     const result = await sql`SELECT * FROM match_documents(${embeddingArr},'wedadoc5', 0.1, ${k})`
@@ -164,7 +165,7 @@ _.embedding = async function (text) {
     );
 
     const embeddingData = await embeddingResponse.json();  
-    log({embeddingData});
+    // log({embeddingData});
 
     // const embedding = embeddingData.data;
     const [{ embedding }] = embeddingData.data;
